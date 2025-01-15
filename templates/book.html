@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Pesanan</title>
+
+   <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css" />
+
+   <!-- font awesome cdn  -->
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+   <!--  css file  -->
+   <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+
+</head>
+<body>
+
+<!-- Mulai header   -->
+
+<section class="header">
+
+   <a href="home.html" class="logo">TRAINGO</a>
+
+   <nav class="navbar">
+      <a href="{{url_for('home')}}">Home</a>
+      <a href="{{url_for('package')}}">Stasiun</a>
+      <a href="{{url_for('book')}}">Pesan Tiket</a>
+   </nav>
+
+   <div id="menu-btn" class="fas fa-bars"></div>
+
+</section>
+
+<!-- Mulai Heading -->
+<div class="heading" style="background:url(../static/img/pexels-luca-sammarco-6589185.jpg) no-repeat">
+   <h1>TRAINGO</h1>
+</div>
+
+<!-- Mulai Pesanan  -->
+
+<section class="booking">
+
+   <h1 class="heading-title">CEPAT PESAN SEKARANG!</h1>
+
+   <form method="post" class="book-form">
+
+      <div class="flex">
+         <div class="inputBox">
+            <span>Nama:</span>
+            <input type="text" placeholder="Masukan  Nama Anda" name="namapemesan">
+         </div>
+         <div class="inputBox">
+            <span>Email :</span>
+            <input type="email" placeholder="Masukan Email Anda" name="email">
+         </div>
+         <div class="inputBox">
+            <span>Handphone :</span>
+            <input type="number" placeholder="Masukan Nomor Anda" name="notelepon">
+         </div>
+         <div class="inputBox">
+            <span>Alamat:</span>
+            <input type="text" placeholder="Masukan Alamat Anda" name="alamat">
+         </div>
+         <div class="inputBox">
+            <span>Tujuan:</span>
+            <input type="text"name=tujuan placeholder="Masukan Tujuan Anda" name="tujuan">
+         </div>
+         <div class="inputBox">
+            <span>Berapa Orang:</span>
+            <input type="number" placeholder="Jumlah Orang" name="orang">
+         </div>
+         <div class="inputBox">
+            <span>Perjalanan :</span>
+            <input type="date" name="tanggal_perjalanan">
+         </div>
+      </div>
+
+      <input type="submit" value="Kirim" class="btn" name="send">
+
+
+   </form>
+
+</section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!--Mulai footer   -->
+
+<section class="footer">
+
+   <div class="box-container">
+
+      <div class="box">
+         <h3> Link Utama</h3>
+         <a href="{{url_for('home')}}"> <i class="fas fa-angle-right"></i> Home</a>
+         <a href="{{url_for('book')}}"> <i class="fas fa-angle-right"></i> Pesan</a>
+         <a href="{{url_for('package')}}"> <i class="fas fa-angle-right"></i>Stasiun</a>
+      </div>
+
+      <div class="box">
+         <h3>masinis</h3>
+         <a href="#"> <i class="fas fa-angle-right"></i> achmad didat</a>
+         <a href="#"> <i class="fas fa-angle-right"></i> agung riski</a>
+         <a href="#"> <i class="fas fa-angle-right"></i> heriansyah</a>
+         <a href="#"> <i class="fas fa-angle-right"></i> muhamad daffa</a>
+
+      </div>
+
+      <div class="box">
+         <h3> Info Kontak</h3>
+         <a href="#"> <i class="fas fa-phone"></i> +628111112221 </a>
+         <a href="#"> <i class="fas fa-phone"></i> +628511111333</a>
+         <a href="#"> <i class="fas fa-envelope"></i> TRAINGO@gmail.com </a>
+         <a href="#"> <i class="fas fa-map"></i> Karawaci, Indonesia </a>
+      </div>
+
+      <div class="box">
+         <h3>Follow Semua</h3>
+         <a href="#"> <i class="fab fa-facebook-f"></i> facebook </a>
+         <a href="#"> <i class="fab fa-twitter"></i> twitter </a>
+         <a href="#"> <i class="fab fa-instagram"></i> instagram </a>
+         <a href="#"> <i class="fab fa-linkedin"></i> linkedin </a>
+      </div>
+
+   </div>
+
+
+</div>
+   <div class="credit"> Copyright <span>TRAINGO</span> 2023 </div>
+
+</section>
+
+
+
+
+
+
+
+
+
+
+<script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+
+
+<script src="script.js"></script>
+
+
+
+</body>
+</html>

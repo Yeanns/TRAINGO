@@ -1,0 +1,25 @@
+<div class="taebl">
+    <table border="1">
+       <tr>
+           <th>Nama Pemesan</th>
+           <th>Harga Produk</th>
+           <th>Hapus Produk</th>
+           <th>Nama Pemesan</th>
+           <th>Harga Produk</th>
+           <th>Hapus Produk</th>
+           <th>Hapus Produk</th>
+            <!-- New column for the delete button -->
+       </tr>
+       {% for row in data %}
+       <tr>
+           <td>{{ row[0] }}</td>
+           <td>{{ row[1] }}</td>
+           <td>{{ row[2] }}</td>
+           <td>{{ row[3] }}</td>
+           <td>{{ row[4] }}</td>
+           <td>{{ row[5] }}</td>
+           <td>{{ row[6] }}</td>
+           
+       </tr>
+       {% endfor %}
+   </table>

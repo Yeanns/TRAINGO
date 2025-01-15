@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Paket</title>
+
+
+   <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css" />
+
+   <!-- link font awesome cdn  -->
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+   <!-- link  css file   -->
+   <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+
+</head>
+<body>
+
+<!-- Mulai header   -->
+
+<section class="header">
+
+   <a href="home.html" class="logo">TRAINGO</a>
+
+   <nav class="navbar">
+      <a href="{{url_for('home')}}">Home</a>
+      <a href="{{url_for('package')}}">Stasiun</a>
+      <a href="{{url_for('book')}}">Pesan Tiket</a>
+   </nav>
+
+   <div id="menu-btn" class="fas fa-bars"></div>
+
+</section>
+
+<!-- Mulai Heading-->
+
+<div class="heading" style="background:url(../static/img/stasiun.jpeg) no-repeat">
+   <h1>STASIUN </h1>
+</div>
+
+<!-- Mulai Paket  -->
+
+<section class="packages">
+
+   <h1 class="heading-title">STASIUN POPULER</h1>
+
+   <div class="box-container">
+
+      <div class="box">
+         <div class="image">
+            <img src="../static/img/bandung.jpeg" alt="">
+         </div>
+         <div class="content">
+            <h3>Bandung, jawa Barat </h3>
+            <p>Stasiun Bandung. Stasiun Bandung (BD) atau Stasiun Hall adalah stasiun kereta api kelas besar tipe A yang terletak di Kebonjeruk, Andir, Kota Bandung, 
+            tepatnya di perbatasan antara Kelurahan Pasirkaliki dan Kebonjeruk.</p>
+            <a href="book.html" class="btn">Pesan Sekarang</a>
+         </div>
+      </div>
+
+      <div class="box">
+         <div class="image">
+            <img src="../static/img/jakarta.jpg" alt="">
+         </div>
+         <div class="content">
+            <h3>JAKARTA, dki jakarta</h3>
+            <p>Stasiun Jakarta Kota beralamat di Jalan Lada, Pinangsia, Jakarta Barat. Untuk bisa menjangkau lokasi ini pun sangat mudah, 
+            sudah banyak akses transportasi umum maupun kendaraan pribadi yang bisa mengantarkanmu tiba di St. Jakarta Kota.</p>
+            <a href="book.html" class="btn">Pesan Sekarang</a>
+         </div>
+      </div>
+
+      <div class="box">
+         <div class="image">
+            <img src="../static/img/surabaya.jpg" alt="">
+         </div>
+         <div class="content">
+            <h3>Surabaya, Jawa Timur</h3>
+            <p>Stasiun Surabaya adalah stasiun kereta api kelas besar tipe A yang terletak di Pacar Keling, Tambaksari, Surabaya; pada ketinggian +5 m.
+               Stasiun Surabaya Gubeng juga merupakan penghubung kereta api terbesar di wilayah Gerbangkertosusila karena melayani kereta api antarkota menghubungkan Surabaya dengan malang
+            </p>
+            <a href="book.html" class="btn">Pesan Sekarang</a>
+         </div>
+      </div>
+
+      <div class="box">
+         <div class="image">
+            <img src="../static/img/malang.jpg" alt="">
+         </div>
+         <div class="content">
+            <h3>MALANG, jawa timur</h3>
+            <p>Stasiun Malang (ML), juga disebut sebagai Stasiun Malang Kotabaru, adalah stasiun kereta api kelas besar tipe A yang terletak di Kelurahan Kiduldalem, Kecamatan Klojen, Kota Malang, Jawa Timur, pada ketinggian +444 m dengan jarak 49,2 km sebelah selatan dari Bangil dan 168 km sebelah tenggara dari Kertosono.
+            </p>
+            <a href="book.html" class="btn">Pesan Sekarang</a>
+         </div>
+      </div>
+
+      <div class="box">
+         <div class="image">
+            <img src="../static/img/semarang.jpeg" alt="">
+         </div>
+         <div class="content">
+            <h3>Semarang, jawa Tengah</h3>
+            <p>Stasiun Semarang , adalah stasiun kereta api kelas besar tipe A yang terletak di kawasan Kota Lama Semarang, Tanjung Mas, Semarang Utara, Semarang. Stasiun yang terletak pada ketinggian +2 meter di atas permukaan laut </p>
+            <a href="book.html" class="btn">Pesan Sekarang</a>
+         </div>
+      </div>
+
+      <div class="box">
+         <div class="image">
+            <img src="../static/img/tangerang.jpeg" alt="">
+         </div>
+         <div class="content">
+            <h3>Tangerang, banten</h3>
+            <p>Stasiun Tangerang , adalah stasiun kereta api kelas besar tipe A yang terletak di kawasan kota tangerang, stasiun ini menjadi populer karena letak posisisnya dekat dengan wisata kuliner dan juga berada di tengah tengah kota tangerang yang membuatnya mudah di akses kendaraan umum maupun pribadi</p>
+            <a href="book.html" class="btn">Pesan Sekarang</a>
+         </div>
+      </div>
+
+      
+
+   </div>
+
+
+</section>
+
+<!-- Mulai footer   -->
+
+<section class="footer">
+
+   <div class="box-container">
+
+      <div class="box">
+         <h3> Link Utama</h3>
+         <a href="{{url_for('home')}}"> <i class="fas fa-angle-right"></i> Home</a>
+         <a href="{{url_for('book')}}"> <i class="fas fa-angle-right"></i> Pesan</a>
+         <a href="{{url_for('package')}}"> <i class="fas fa-angle-right"></i>Stasiun</a>
+      </div>
+
+      <div class="box">
+         <h3>masinis</h3>
+         <a href="#"> <i class="fas fa-angle-right"></i> achmad didat</a>
+         <a href="#"> <i class="fas fa-angle-right"></i> agung riski</a>
+         <a href="#"> <i class="fas fa-angle-right"></i> heriansyah</a>
+         <a href="#"> <i class="fas fa-angle-right"></i> muhamad daffa</a>
+
+      </div>
+
+      <div class="box">
+         <h3> Info Kontak</h3>
+         <a href="#"> <i class="fas fa-phone"></i> +628111112221 </a>
+         <a href="#"> <i class="fas fa-phone"></i> +628511111333</a>
+         <a href="#"> <i class="fas fa-envelope"></i> TRAINGO@gmail.com </a>
+         <a href="#"> <i class="fas fa-map"></i> Karawaci, Indonesia </a>
+      </div>
+
+      <div class="box">
+         <h3>Follow Semua</h3>
+         <a href="#"> <i class="fab fa-facebook-f"></i> facebook </a>
+         <a href="#"> <i class="fab fa-twitter"></i> twitter </a>
+         <a href="#"> <i class="fab fa-instagram"></i> instagram </a>
+         <a href="#"> <i class="fab fa-linkedin"></i> linkedin </a>
+      </div>
+
+   </div>
+
+   <div class="credit"> Copyright <span>TRAINGO </span>  2023 </div>
+
+</section>
+
+
+
+
+
+
+
+
+
+
+
+
+<script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+
+
+<script src="script.js"></script>
+
+</body>
+</html>
